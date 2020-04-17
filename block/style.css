@@ -1,0 +1,61 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+  
+body {
+  font-family: 'Lekton', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #444;
+  text-align: center;
+  line-height: 1.5;
+}
+
+main {
+  padding-top: 48px;
+}
+
+nav, footer {
+  z-index: 10;
+  line-height: 1;
+  font-weight: 600;
+  background-color: #ddd;
+  font-family: 'Merriweather', serif;
+}
+  
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.nav_container {
+  padding: 16px;
+  min-height: 32px;
+  width: 100%;
+  max-width: 944px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-bars {
+  margin-right: 16px;
+}
+  
+section {
+  height: 150px;
+  background-color: #bbb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+  
+section:nth-child(even) {
+  background-color: #ddd;
+}
